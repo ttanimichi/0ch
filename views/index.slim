@@ -17,3 +17,9 @@ html lang="ja"
         li
           a href="/topics/#{topic.id}"
             = topic.title
+      h2 新規スレッド作成
+      form action="/topics" method="post"
+        div
+          input name="title" type="text"
+        div
+          input type="submit" value="作成する"

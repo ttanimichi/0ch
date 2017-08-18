@@ -14,3 +14,9 @@ post '/topics' do
   topic.save
   redirect '/'
 end
+
+get '/topics/:id' do
+  @topic = Topic.find(params[:id])
+  @posts = Post.of_topic(@topic.id)
+  slim :show
+end

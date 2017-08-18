@@ -1,0 +1,22 @@
+doctype html
+html lang="ja"
+  head
+    meta charset="utf-8"
+    title ぜろちゃんねる
+    link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet"
+    link href="/style.css?#{Time.now.to_i}" rel="stylesheet"
+    script src="/script.js?#{Time.now.to_i}"
+  body.container
+    main
+      h1= @topic.title
+
+      .posts
+        - @posts.each do |post|
+          .post
+            .meta
+              span= post.name
+              span= post.created_at.strftime('%Y年%m月%d日 %H:%M:%S')
+            .body
+              span= post.body
+
+    a href="/" トップページへ

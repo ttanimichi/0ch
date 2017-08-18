@@ -1,0 +1,19 @@
+.container {
+    padding: 10px;
+}
+
+.posts .post {
+    margin-bottom: 20px;
+}
+
+.posts .post span {
+    margin-right: 10px;
+}
+
+.posts .post .body {
+    padding: 10px 0;
+}
+
+.new-post label {
+    margin-right: 10px;
+}

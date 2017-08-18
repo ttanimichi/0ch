@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     mustermann (1.0.0)
+    mysql2 (0.4.7)
     rack (2.0.3)
     rack-protection (2.0.0)
       rack
@@ -20,6 +21,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  mysql2
   sinatra
   slim
 

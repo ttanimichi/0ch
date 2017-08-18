@@ -10,3 +10,10 @@ html lang="ja"
     p sinatraで掲示板を作ろう
     p
       a href="https://github.com/ttanimichi/0ch" https://github.com/ttanimichi/0ch
+    main
+      h2 スレッド一覧
+      ul
+      - @topics.each do |topic|
+        li
+          a href="/topics/#{topic.id}"
+            = topic.title

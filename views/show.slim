@@ -19,4 +19,18 @@ html lang="ja"
             .body
               span= post.body
 
+      .new-post
+        form action="/topics/#{@topic.id}/posts" method="post"
+          .meta
+            label
+              | 名前:
+              input name="name" type="text"
+            label
+              | Email:
+              input name="email" type="text"
+          .body
+            textarea cols="50" name="body" rows="4"
+          div
+            input type="submit" value="書き込む"
+
     a href="/" トップページへ
